@@ -1,4 +1,4 @@
-# Potatobot
+# Discord Music Bot
 My Discord music bot based off of meew0's Lethe and chalda's DiscordBot and made possible by hydrabolt's [Discord.js](https://github.com/hydrabolt/discord.js).
 
 **Warning:** This bot is built on the unofficial Discord API and using experimental features and will probably break in the future.
