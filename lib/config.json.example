@@ -6,7 +6,7 @@
 		"ServerName" : "default voice channel",
 		"ServerName" : "default voice channel",
 		"ServerName" : "default voice channel"
-	}
+	},
 	"timeOptions" : {
 		"timeZone": "Your timezone in IANA time zone format For ex. 'America/Los_Angeles' (PST), 
 		'America/Denver' (MST), 'America/Chicago' (CST), 'America/New_York' (EST)", 
