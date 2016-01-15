@@ -26,7 +26,7 @@ bot.on("message", function(message) {
         	Module.commands[cmd].process(bot, message);
         }
         else {
-            bot.reply(message, "Invalid command. Please check out the bot commands.");
+            bot.reply(message, "Invalid command. Please check out the bot commands using !help");
         }
     }
 });
