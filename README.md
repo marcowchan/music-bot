@@ -69,13 +69,13 @@ joins a voice channel binds the text channel where the command was issued. defau
 Unbinds from currently bounded text channel and leaves the voice channel
 ```
 ```
-!queue (video id or link) (video id or link) optional
-queues a youtube video for the bot to play. You can queue more than 1 video at a time.
+!queue (youtube video id or link) or (soundcloud link)
+queues a youtube or soundcloud song for the bot to play. You can queue more than 1 video at a time.
 Ex. https://www.youtube.com/watch?v=**id here**
 ```
 ```
-!playlist (playlist id or link)
-queues a youtube playlist (only the first 50 videos)
+!playlist (youtube playlist id or link) or (soundcloud link)
+queues a youtube (only the first 50 videos) or soundcloud playlist
 ```
 ```
 !next 
