@@ -31,4 +31,17 @@ bot.on("message", function(message) {
     }
 });
 
+// stolen from meew0
+process.on('uncaughtException', function(err) {
+  if (err.code == 'ECONNRESET') {
+    console.log('Got an ECONNRESET! This is *probably* not an error. Stacktrace:');
+    console.log(err.stack);
+  } else {
+    // Normal error handling
+    console.log(err);
+    console.log(err.stack);
+    process.exit(0);
+  }
+});
+
 bot.login(Config.email, Config.password);
