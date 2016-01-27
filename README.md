@@ -32,7 +32,8 @@ $ sudo apt-get install ffmpeg
 Then install all the modules
 ```
 $ npm install discord.js
-$ npm install superagent
+$ npm install fs
+$ npm install request
 $ npm install url
 $ npm install ytdl-core
 ```
