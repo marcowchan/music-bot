@@ -39,7 +39,7 @@ $ npm install ytdl-core
 ```
 
 ## Usage
-Make sure to create config.json and rss.json by using the example files
+Make sure to create config.json by using the example files
 ```
 $ node musicbot.js
 ```
