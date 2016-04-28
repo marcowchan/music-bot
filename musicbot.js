@@ -16,22 +16,16 @@ bot.on("disconnected", function () {
 });
 
 bot.on("message", function(message) {
-	if(!message.content.startsWith("!") || bot.user == message.author) {
-	    return;
-	}
+	if(!message.content.startsWith("!") || bot.user == message.author) return;
     if(!message.channel.isPrivate) {
         var cmd = message.content.split(" ")[0];
         console.log("treating " + cmd + " from " + message.author.username);
-        if(Module.commands.hasOwnProperty(cmd)) {
-        	Module.commands[cmd].process(bot, message);
-        }
-        else {
-            bot.reply(message, "Invalid command. Please check out the bot commands using !help");
-        }
+        if(Module.commands.hasOwnProperty(cmd)) Module.commands[cmd].process(bot, message);
+        else bot.reply(message, "Invalid command. Please check out the bot commands using !help");
     }
 });
 
-// stolen from meew0
+// shamelessly stolen from meew0
 process.on('uncaughtException', function(err) {
   if (err.code == 'ECONNRESET') {
     console.log('Got an ECONNRESET! This is *probably* not an error. Stacktrace:');
