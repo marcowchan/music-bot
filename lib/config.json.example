@@ -1,6 +1,5 @@
 {
-    "email" : "user",
-	"password" : "password",
+    "token" : "your token",
 	"youtube_api_key" : "https://console.developers.google.com/start",
 	"defaultChannels" : {
 		"ServerName" : "default voice channel",

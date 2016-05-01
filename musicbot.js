@@ -38,4 +38,4 @@ process.on('uncaughtException', function(err) {
   }
 });
 
-bot.login(Config.email, Config.password);
+bot.loginWithToken(Config.token);
